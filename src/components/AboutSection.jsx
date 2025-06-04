@@ -48,7 +48,7 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg"> Generative AI and ML</h4>
                                 <p className="text-muted-foreground">
-                                    create websites xyz
+                                    AI-powered solutions
                                 </p>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg"> Web Developement</h4>
                                 <p className="text-muted-foreground">
-                                    responsive 
+                                    Responsive Design
                                 </p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg"> SpringBoot</h4>
                                 <p className="text-muted-foreground">
-                                    management
+                                    Backend services
                                 </p>
                             </div>
                         </div>
