@@ -1,6 +1,7 @@
 import { Code } from "lucide-react";
 import { User } from "lucide-react";
 import { Briefcase } from "lucide-react";
+import { Download } from "lucide-react";
 
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -14,11 +15,11 @@ export const AboutSection = () => {
                     <h3 className="text-2xl font-semibold"> Passionate Computer Science student</h3>
 
                     <p className="text-muted-foreground">
-                        As a final year computer science student I have some experience in xyz and specialise in xyz
+                    As a final-year Computer Science student, I have hands-on experience in software development, artificial intelligence, machine learning, and web technologies. My academic journey and project work have given me a strong foundation in Python, Java, and frameworks such as Spring Boot.
                     </p>
 
                     <p className="text-muted-foreground">
-                        I am passionate about learning and have built projects in AI , ML , web developement , Springboot
+                        I am passionate about building real-world solutions and have developed projects in AI, ML, and web development, including full-stack applications using modern frameworks. I enjoy learning new technologies and collaborating on innovative projects that solve meaningful problems.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -26,8 +27,13 @@ export const AboutSection = () => {
                             Get In Touch
                         </a>
 
-                        <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
-                            Download CV
+                        <a
+                          href="/Resume.pdf"
+                          download
+                          className="inline-flex items-center px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                        >
+                          <Download className="mr-2" size={18} />
+                          Download Resume
                         </a>
 
                     </div>
@@ -40,7 +46,7 @@ export const AboutSection = () => {
                               <Code className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> Web Developement</h4>
+                                <h4 className="font-semibold text-lg"> Generative AI and ML</h4>
                                 <p className="text-muted-foreground">
                                     create websites xyz
                                 </p>
@@ -53,7 +59,7 @@ export const AboutSection = () => {
                               <User className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> UI UX</h4>
+                                <h4 className="font-semibold text-lg"> Web Developement</h4>
                                 <p className="text-muted-foreground">
                                     responsive 
                                 </p>
@@ -66,7 +72,7 @@ export const AboutSection = () => {
                               <Briefcase className="h-6 w-6 text-primary" />
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg"> Project management</h4>
+                                <h4 className="font-semibold text-lg"> SpringBoot</h4>
                                 <p className="text-muted-foreground">
                                     management
                                 </p>
