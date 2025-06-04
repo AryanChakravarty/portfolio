@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const skills = [
-    {name: "HTML/CSS", category: "frontend"},
     {name: "JavaScript", category: "frontend"},
     {name: "Tailwind CSS", category: "frontend"},
     {name: "React", category: "frontend"},
@@ -17,9 +16,8 @@ const skills = [
     
 
     {name: "Git/Github", category: "tools"},
-    {name: "VS Code", category: "tools"},
     {name: "Jupyter", category: "tools"},
-    {name:"Vercel", category: "tools"},
+    {name: "Kaggle", category: "tools"},
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];

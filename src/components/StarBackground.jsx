@@ -58,7 +58,7 @@ export const StarBackground = () => {
       setMeteors(newMeteors);
       };
       return<div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-          {stars.map((star) => (
+          {stars.filter(star => star.y > 7).map((star) => (
               <div key={star.id} className="star animate-pulse-subtle" style={{
                   width: star.size + "px",
                   height: star.size +"px",
@@ -71,7 +71,7 @@ export const StarBackground = () => {
           />
           ))}
 
-          {meteors.map((meteor) => (
+          {meteors.filter(meteor => meteor.y > 7).map((meteor) => (
               <div key={meteor.id} className="meteor animate-meteor" style={{
                   width: meteor.size * 50 + "px",
                   height: meteor.size * 2+"px",
