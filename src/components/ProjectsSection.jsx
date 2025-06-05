@@ -1,4 +1,4 @@
-import { Github,ArrowRight } from "lucide-react"
+import { Github, ArrowRight, ExternalLink } from "lucide-react"
 
 const projects = [
     {
@@ -15,6 +15,7 @@ const projects = [
        description:"A self driving car using neural networks with a visualisation of it built in Javascript",
        image:"/projects/project2.png",
        tags: ["Javascript","HTML","CSS"],
+       liveUrl:"https://self-drive.vercel.app/",
        githubUrl:"https://github.com/AryanChakravarty/Self-Drive",
     },
     {
@@ -23,6 +24,7 @@ const projects = [
        description:"A retro style interactive game website : Tetris , Snake , Rock paper scissors and Wordle",
        image:"/projects/project3.png",
        tags: ["Javascript","HTML","CSS"],
+       liveUrl:"https://game-time-seven.vercel.app/",
        githubUrl:"https://github.com/AryanChakravarty/Game-time",
     },
 ]
@@ -59,7 +61,12 @@ export const ProjectsSection = () => {
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className="flex justify-end items-end mt-auto">
+                                <div className="flex justify-end items-end mt-auto gap-3">
+                                    {project.liveUrl && (
+                                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                            <ExternalLink size={20}/>
+                                        </a>
+                                    )}
                                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <Github size={20}/>
                                     </a>
