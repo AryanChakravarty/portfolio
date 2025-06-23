@@ -3,11 +3,11 @@ import { Github, ArrowRight, ExternalLink } from "lucide-react"
 const projects = [
     {
        id: 1,
-       title:"Movie recommender",
-       description:"A semantic movie recommender with genres, emotional tone and a relevance score",
-       image:"/projects/project1.png",
+       title:"AI basketball coach",
+       description:"An AI basketball coach that provides real time feedback on your shooting based on your form",
+       image:"/projects/project3.png",
        tags: ["Python"],
-       githubUrl:"https://github.com/AryanChakravarty/semantic-movie-recommender",
+       githubUrl:"https://github.com/amaldgregory/basketball_computervision",
     },
     {
        id: 2,
@@ -19,14 +19,13 @@ const projects = [
        githubUrl:"https://github.com/AryanChakravarty/Self-Drive",
     },
     {
-       id: 3,
-       title:"Game time",
-       description:"A retro style interactive game website : Tetris , Snake , Rock paper scissors and Wordle",
-       image:"/projects/project3.png",
-       tags: ["Javascript","HTML","CSS"],
-       liveUrl:"https://game-time-seven.vercel.app/",
-       githubUrl:"https://github.com/AryanChakravarty/Game-time",
-    },
+        id: 3,
+        title:"Movie recommender",
+        description:"A semantic movie recommender with genres, emotional tone and a relevance score",
+        image:"/projects/project1.png",
+        tags: ["Python"],
+        githubUrl:"https://github.com/AryanChakravarty/semantic-movie-recommender",
+     },
 ]
 
 export const ProjectsSection = () => {
